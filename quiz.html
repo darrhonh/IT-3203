@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="top">
+        <h1>HTTP Quiz</h1>
+        <p>Test your knowledge of HTTP.</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="basics.html">Basics</a>
+        <a href="how.html">How HTTP Works</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <h2>Self-Assessment Quiz</h2>
+
+        <p>
+            Answer all five questions. Each question is worth 20 points.
+            A score of 70 or higher is passing.
+        </p>
+
+        <form id="quizForm">
+
+            <!-- Question 1: Fill in the blank -->
+            <div class="question">
+                <h3>1. What does HTTP stand for?</h3>
+
+                <label for="q1">Answer:</label>
+                <input type="text" id="q1">
+            </div>
+
+            <!-- Question 2: Multiple choice -->
+            <div class="question">
+                <h3>2. Which protocol is the secure version of HTTP?</h3>
+
+                <label>
+                    <input type="radio" name="q2" value="HTTP">
+                    HTTP
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="HTTPS">
+                    HTTPS
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="FTP">
+                    FTP
+                </label>
+            </div>
+
+            <!-- Question 3: Multiple choice -->
+            <div class="question">
+                <h3>3. What normally sends an HTTP request?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="Server">
+                    Server
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="Browser">
+                    Web browser
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="Database">
+                    Database
+                </label>
+            </div>
+
+            <!-- Question 4: Multiple choice -->
+            <div class="question">
+                <h3>4. Which HTTP method is used to retrieve information?</h3>
+
+                <label>
+                    <input type="radio" name="q4" value="POST">
+                    POST
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="GET">
+                    GET
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="PUT">
+                    PUT
+                </label>
+            </div>
+
+            <!-- Question 5: Multiple selection -->
+            <div class="question">
+                <h3>5. Select all valid HTTP methods.</h3>
+
+                <label>
+                    <input type="checkbox" id="get">
+                    GET
+                </label>
+
+                <label>
+                    <input type="checkbox" id="post">
+                    POST
+                </label>
+
+                <label>
+                    <input type="checkbox" id="delete">
+                    DELETE
+                </label>
+
+                <label>
+                    <input type="checkbox" id="email">
+                    EMAIL
+                </label>
+            </div>
+
+            <!-- Buttons -->
+            <div class="quiz-buttons">
+                <button type="button" onclick="checkQuiz()">
+                    Submit Quiz
+                </button>
+
+                <button type="button" onclick="resetQuiz()">
+                    Retake Quiz
+                </button>
+            </div>
+
+        </form>
+
+        <!-- Results appear here -->
+        <div id="results"></div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>This website was created as a class project for IT 3203.</p>
+
+        <p>
+            <a href="https://ksuweb.github.io/IT3203/">
+                IT 3203 Course Website
+            </a>
+        </p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
