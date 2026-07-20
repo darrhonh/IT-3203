@@ -1,4 +1,3 @@
-/* General page style */
 
 body {
     font-family: Arial, sans-serif;
@@ -34,6 +33,8 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 15px;
+    padding: 8px;
+    display: inline-block;
 }
 
 /* Hover effect */
@@ -71,6 +72,26 @@ main {
     flex: 1;
 }
 
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #999999;
+    padding: 10px;
+}
+
 /* Footer */
 
 footer {
@@ -83,6 +104,7 @@ footer {
 footer a {
     color: white;
 }
+
 /* Quiz questions */
 
 .question {
@@ -157,4 +179,64 @@ footer a {
     border-left: 5px solid #721c24;
     padding: 15px;
     margin-bottom: 15px;
+}
+
+/* Tablet screen */
+
+@media screen and (max-width: 900px) {
+
+    main {
+        width: 90%;
+    }
+
+    .flex-box {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+}
+
+/* Mobile phone screen */
+
+@media screen and (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 0;
+        padding: 12px;
+        border-bottom: 1px solid white;
+    }
+
+    main {
+        width: auto;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .flex-box {
+        flex-direction: column;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .question input[type="text"] {
+        width: 100%;
+    }
+
+    .quiz-buttons button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
 }
